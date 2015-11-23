@@ -1,0 +1,22 @@
+﻿La génération a démarré 21/10/2015 08:29:49.
+     1>Projet "D:\Users\Emerick Lecomte\Mes documents\Visual Studio 2015\Projects\MathProjectVoronoi\MathProjectVoronoi\MathProjectVoronoi.vcxproj" sur le nœud 2 (Build cible(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt Camera.cpp common\EsgiShader.cpp Landmark.cpp main.cpp OpenGLRenderer.cpp Time.cpp
+         Time.cpp
+     1>d:\users\emerick lecomte\mes documents\visual studio 2015\projects\mathprojectvoronoi\mathprojectvoronoi\time.h(5): fatal error C1083: Impossible d'ouvrir le fichier include : 'glfw3.h' : No such file or directory
+         OpenGLRenderer.cpp
+     1>d:\users\emerick lecomte\mes documents\visual studio 2015\projects\mathprojectvoronoi\mathprojectvoronoi\openglrenderer.h(6): fatal error C1083: Impossible d'ouvrir le fichier include : 'vec3.hpp' : No such file or directory
+         main.cpp
+     1>d:\users\emerick lecomte\mes documents\visual studio 2015\projects\mathprojectvoronoi\mathprojectvoronoi\openglrenderer.h(6): fatal error C1083: Impossible d'ouvrir le fichier include : 'vec3.hpp' : No such file or directory
+         Landmark.cpp
+     1>d:\users\emerick lecomte\mes documents\visual studio 2015\projects\mathprojectvoronoi\mathprojectvoronoi\drawableitem.h(4): fatal error C1083: Impossible d'ouvrir le fichier include : 'glew.h' : No such file or directory
+         EsgiShader.cpp
+     1>d:\users\emerick lecomte\mes documents\visual studio 2015\projects\mathprojectvoronoi\mathprojectvoronoi\common\esgishader.h(13): fatal error C1083: Impossible d'ouvrir le fichier include : 'glew.h' : No such file or directory
+         Camera.cpp
+     1>d:\users\emerick lecomte\mes documents\visual studio 2015\projects\mathprojectvoronoi\mathprojectvoronoi\camera.h(2): fatal error C1083: Impossible d'ouvrir le fichier include : 'gtc/matrix_transform.hpp' : No such file or directory
+         Génération de code en cours...
+     1>Génération du projet "D:\Users\Emerick Lecomte\Mes documents\Visual Studio 2015\Projects\MathProjectVoronoi\MathProjectVoronoi\MathProjectVoronoi.vcxproj" terminée (Build cible(s)) -- ÉCHEC.
+
+ÉCHEC de la build.
+
+Temps écoulé 00:00:01.28
