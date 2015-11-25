@@ -4,6 +4,6 @@
 class Algorithm
 {
 public:
-	static void MarcheDeJarvis(PointPool pointPool);
+	static void MarcheDeJarvis(PointPool &pointPool);
 };
 

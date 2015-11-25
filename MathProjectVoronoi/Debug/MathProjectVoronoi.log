@@ -1,17 +1,21 @@
-﻿La génération a démarré 21/11/2015 17:35:33.
-     1>Projet "D:\Users\Emerick Lecomte\Mes documents\Visual Studio 2015\Projects\MathProjectVoronoi\MathProjectVoronoi\MathProjectVoronoi.vcxproj" sur le nœud 2 (Build cible(s)).
+﻿La génération a démarré 25/11/2015 17:24:09.
+     1>Projet "C:\Users\elecomte\Documents\GitHubVisualStudio\MathProjectVoronoi\MathProjectVoronoi\MathProjectVoronoi.vcxproj" sur le nœud 2 (Build cible(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I..\Libs /I..\Libs\glew\include\GL /I..\Libs\glfw\include\GLFW /I..\Libs\glm\glm /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Algorithm.cpp
          Algorithm.cpp
-     1>d:\users\emerick lecomte\mes documents\visual studio 2015\projects\mathprojectvoronoi\mathprojectvoronoi\algorithm.cpp(9): warning C4018: '<' : incompatibilité signed/unsigned
-     1>d:\users\emerick lecomte\mes documents\visual studio 2015\projects\mathprojectvoronoi\mathprojectvoronoi\algorithm.cpp(31): error C2664: 'void getBottomLeftPoint(std::vector<Point2D,std::allocator<_Ty>> &,Point2D *)' : impossible de convertir l'argument 2 de 'Point2D (__cdecl *)(void)' en 'Point2D *'
-                 with
-                 [
-                     _Ty=Point2D
-                 ]
-         d:\users\emerick lecomte\mes documents\visual studio 2015\projects\mathprojectvoronoi\mathprojectvoronoi\algorithm.cpp(31): note: Aucun contexte dans lequel cette conversion est possible
-     1>Génération du projet "D:\Users\Emerick Lecomte\Mes documents\Visual Studio 2015\Projects\MathProjectVoronoi\MathProjectVoronoi\MathProjectVoronoi.vcxproj" terminée (Build cible(s)) -- ÉCHEC.
+     1>c:\users\elecomte\documents\githubvisualstudio\mathprojectvoronoi\mathprojectvoronoi\algorithm.cpp(10): warning C4018: '<' : incompatibilité signed/unsigned
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\elecomte\Documents\GitHubVisualStudio\MathProjectVoronoi\Debug\MathProjectVoronoi.exe" /INCREMENTAL /NOLOGO /LIBPATH:..\Libs /LIBPATH:..\Libs\glew\lib\Release\Win32 /LIBPATH:..\Libs\glfw\libVS2015\Debug opengl32.lib glew32s.lib glu32.lib glfw3.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:msvcrt.lib /NODEFAULTLIB:libcmt.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\elecomte\Documents\GitHubVisualStudio\MathProjectVoronoi\Debug\MathProjectVoronoi.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\elecomte\Documents\GitHubVisualStudio\MathProjectVoronoi\Debug\MathProjectVoronoi.lib" /MACHINE:X86 Debug\Algorithm.obj
+         Debug\Camera.obj
+         Debug\EsgiShader.obj
+         Debug\Landmark.obj
+         Debug\main.obj
+         Debug\OpenGLRenderer.obj
+         Debug\PointPool.obj
+         Debug\Time.obj
+         MathProjectVoronoi.vcxproj -> C:\Users\elecomte\Documents\GitHubVisualStudio\MathProjectVoronoi\Debug\MathProjectVoronoi.exe
+     1>Génération du projet "C:\Users\elecomte\Documents\GitHubVisualStudio\MathProjectVoronoi\MathProjectVoronoi\MathProjectVoronoi.vcxproj" terminée (Build cible(s)).
 
-ÉCHEC de la build.
+La génération a réussi.
 
-Temps écoulé 00:00:00.45
+Temps écoulé 00:00:01.60

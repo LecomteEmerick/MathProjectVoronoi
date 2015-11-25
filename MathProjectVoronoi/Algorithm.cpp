@@ -1,32 +1,60 @@
 #include "Algorithm.h"
+#include <memory>
 
-void getBottomLeftPoint(std::vector<Point2D> &pointCloud, Point2D &outPoint)
+int getBottomLeftPointIndex(std::vector<Point2D> &pointCloud)
 {
 	if (pointCloud.size() < 1)
-		return;
+		return -1;
 
-	outPoint = pointCloud[0];
+	int index = 0;
 	for (int i = 1; i < pointCloud.size(); ++i)
 	{
-		if (outPoint->y <= pointCloud[i].y)
+		if (pointCloud[index].y >= pointCloud[i].y)
 		{
-			if (outPoint->y < pointCloud[i].y)
+			if (pointCloud[index].y > pointCloud[i].y)
 			{
-				outPoint = &pointCloud[i];
+				index = i;
 			}
 			else 
 			{
-				if (outPoint->x > pointCloud[i].x)
+				if (pointCloud[index].x > pointCloud[i].x)
 				{
-					outPoint = &pointCloud[i];
+					index = i;
 				}
+			}
+		}
+	}
+	return index;
+}
+
+int GetLeftNearestPointIndex(std::vector<Point2D> &pointCloud,int RefIndexPoint)
+{
+	float CurrentXDistance = -1;
+	Point2D tmp;
+	Point2D RefPoint = pointCloud[RefIndexPoint];
+	for (int i = 0; i < pointCloud.size(); ++i)
+	{
+		if (i != RefIndexPoint)
+		{
+			tmp = pointCloud[i];
+			float xDistance = sqrtf((tmp.x - RefPoint.x) * (tmp.x - RefPoint.x));
+			if (xDistance < CurrentXDistance)
+			{
+
 			}
 		}
 	}
 }
 
-void MarcheDeJarvis(PointPool pointPool)
+void Algorithm::MarcheDeJarvis(PointPool &pointPool)
 {
-	Point2D point();
-	getBottomLeftPoint(pointPool.cloudPoint, &point);
+	std::vector<Point2D> env;
+
+	int currentIndex = getBottomLeftPointIndex(pointPool.cloudPoint);
+	if (currentIndex == -1)
+		return;
+
+	env.push_back(pointPool.cloudPoint[currentIndex]);
+
+
 }
